@@ -1,0 +1,130 @@
+/* FLEX DECLARATIONS */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+   
+  .wrapper > * {
+    padding: 20px;
+  }
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.alignItemsCenter { /* this aligns along the cross axis */
+    align-items: center;
+}
+
+.justifyContentCenter { /* this positions along the main axis */
+    justify-content: center;
+}
+
+.alignSpaceEvenly {
+    align-content: space-evently;
+}
+
+.justifySpaceEvenly {
+    justify-content: space-evenly;
+}
+
+#myGrid {
+    border: solid hotpink 20px;
+    border-radius: 10px;
+
+}
+
+.square {
+    height: 3px;
+    width: 3px;
+    transition: all .1s ease-in-out;
+}
+
+.square:hover {
+    size: 200%;
+    transform: scale(3);
+    border: solid purple .5;
+}
+
+.changeColor:hover {
+    background-color: hotpink;
+}
+
+.changeColor {
+    background-color: 	#787878;
+}
+
+.spine {
+    height: 10px;
+    width: 10px;
+}
+
+#pageContainer {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;;
+}
+
+.lobster {
+    font-family: lobster;
+}
+
+.buffer {
+    padding: 50px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.flex1 {
+    flex: 1;
+  }
+
+.pinkBorder {
+    border: solid hotpink;
+}
+
+.dot {
+    background-color: red;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.changeToRed {
+    background-color: red;
+    border: solid yellow;
+}
+
+.colorButton {
+    border: solid black;
+    font-family: lobster;
+    font-size: 75%;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.padded {
+    padding: 20px;
+}
+
+/*
+#buttonContainer {
+    background-color: aliceblue;
+}
+*/
+
+.main {
+    flex-grow: 1;
+}
