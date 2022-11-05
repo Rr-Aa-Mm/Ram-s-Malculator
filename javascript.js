@@ -29,7 +29,12 @@ function calcButtonBuilder() {
             console.log(thisButtonValue);
             let thisButton = document.createElement('button');
             thisButton.innerText = thisButtonValue;
-            thisButton.className = "lobster button-74";
+            if (typeof thisButtonValue === "number") {
+                thisButton.className = "lobster button-74-secondary";
+            } else {
+                thisButton.className = "lobster button-74";
+            };
+           
             buttonDiv.appendChild(thisButton);
         }
         console.log(buttonDiv);
