@@ -1,174 +1,146 @@
 /* FLEX DECLARATIONS */
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body {
+    background-image: url("./Art/twilightGradient.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-   
-  .wrapper > * {
-    padding: 20px;
+  
+  .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+     
+    .wrapper > * {
+      padding: 20px;
+    }
+  
+  .flex {
+      display: flex;
   }
-
-.flex {
-    display: flex;
-}
-
-.row {
-    flex-direction: row;
-}
-
-.column {
-    flex-direction: column;
-}
-
-.alignItemsCenter { /* this aligns along the cross axis */
-    align-items: center;
-}
-
-.justifyContentCenter { /* this positions along the main axis */
-    justify-content: center;
-}
-
-.alignSpaceEvenly {
-    align-content: space-evently;
-}
-
-.justifySpaceEvenly {
-    justify-content: space-evenly;
-}
-
-#myGrid {
-    border: solid hotpink 20px;
-    border-radius: 10px;
-
-}
-
-.square {
-    height: 3px;
-    width: 3px;
-    transition: all .1s ease-in-out;
-}
-
-.square:hover {
-    size: 200%;
-    transform: scale(3);
-    border: solid purple .5;
-}
-
-.changeColor:hover {
-    background-color: hotpink;
-}
-
-.changeColor {
-    background-color: 	#787878;
-}
-
-.spine {
-    height: 10px;
-    width: 10px;
-}
-
-#pageContainer {
-    background-color: aliceblue;
-    padding: 20px;
-    border-radius: 10px;;
-}
-
-.lobster {
-    font-family: lobster;
-}
-
-.buffer {
-    padding: 50px;
-    margin: auto;
-    padding-bottom: 50px;
-}
-
-.flex1 {
-    flex: 1;
+  
+  .row {
+      flex-direction: row;
   }
-
-.pinkBorder {
-    border: solid hotpink;
-}
-
-.dot {
-    background-color: red;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-}
-
-.changeToRed {
-    background-color: red;
-    border: solid yellow;
-}
-
-.colorButton {
-    border: solid black;
-    font-family: lobster;
-    font-size: 75%;
-    border-radius: 10px;
-    margin: 5px;
-}
-
-.padded {
-    padding: 20px;
-}
-
-/*
-#buttonContainer {
-    background-color: aliceblue;
-}
-*/
-
-.main {
-    flex-grow: 1;
-}
-
-
-/* CSS */
-.button-74 {
-  background-color: #39CCCC/* #fbeee0*/;
-  border: 2px solid #422800;
-  border-radius: 30px;
-  box-shadow: #422800 4px 4px 0 0;
-  color: #422800;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 0 18px;
-  line-height: 50px;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-74:hover {
-  background-color: #F012BE/*#fff*/;
-}
-
-.button-74:active {
-  box-shadow: #422800 2px 2px 0 0;
-  transform: translate(2px, 2px);
-}
-
-@media (min-width: 768px) {
+  
+  .column {
+      flex-direction: column;
+  }
+  
+  .alignItemsCenter { /* this aligns along the cross axis */
+      align-items: center;
+  }
+  
+  .justifyContentCenter { /* this positions along the main axis */
+      justify-content: center;
+  }
+  
+  .alignSpaceEvenly {
+      align-content: space-evently;
+  }
+  
+  .justifySpaceEvenly {
+      justify-content: space-evenly;
+  }
+  
+  #myGrid {
+      border: solid hotpink 20px;
+      border-radius: 10px;
+  
+  }
+  
+  .square {
+      height: 3px;
+      width: 3px;
+      transition: all .1s ease-in-out;
+  }
+  
+  .square:hover {
+      size: 200%;
+      transform: scale(3);
+      border: solid purple .5;
+  }
+  
+  .changeColor:hover {
+      background-color: hotpink;
+  }
+  
+  .changeColor {
+      background-color:   #787878;
+  }
+  
+  .spine {
+      height: 10px;
+      width: 10px;
+  }
+  
+  #pageContainer {
+      background-color: aliceblue;
+      padding: 20px;
+      border-radius: 10px;;
+  }
+  
+  .lobster {
+      font-family: lobster;
+  }
+  
+  .buffer {
+      padding: 50px;
+      margin: auto;
+      padding-bottom: 50px;
+  }
+  
+  .flex1 {
+      flex: 1;
+    }
+  
+  .pinkBorder {
+      border: solid hotpink;
+  }
+  
+  .dot {
+      background-color: red;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+  }
+  
+  .changeToRed {
+      background-color: red;
+      border: solid yellow;
+  }
+  
+  .colorButton {
+      border: solid black;
+      font-family: lobster;
+      font-size: 75%;
+      border-radius: 10px;
+      margin: 5px;
+  }
+  
+  .padded {
+      padding: 20px;
+  }
+  
+  /*
+  #buttonContainer {
+      background-color: aliceblue;
+  }
+  */
+  
+  .main {
+      flex-grow: 1;
+  }
+  
+  
+  /* CSS */
   .button-74 {
-    min-width: 120px;
-    padding: 0 25px;
-  }
-}
-
-/* CSS */
-.button-74-secondary {
-    background-color: #FF851B/* #fbeee0*/;
+    background-color: #39CCCC/* #fbeee0*/;
     border: 2px solid #422800;
     border-radius: 30px;
     box-shadow: #422800 4px 4px 0 0;
@@ -186,24 +158,83 @@
     touch-action: manipulation;
   }
   
-  .button-74-secondary:hover {
-    background-color: #FFDC00/*#fff*/;
+  .button-74:hover {
+    background-color: #F012BE/*#fff*/;
   }
   
-  .button-74-secondary:active {
+  .button-74:active {
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(2px, 2px);
   }
   
   @media (min-width: 768px) {
-    .button-74-secondary {
+    .button-74 {
       min-width: 120px;
       padding: 0 25px;
     }
   }
   
-
-
-
-
-
+  /* CSS */
+  .button-74-secondary {
+      background-color: #FF851B/* #fbeee0*/;
+      border: 2px solid #422800;
+      border-radius: 30px;
+      box-shadow: #422800 4px 4px 0 0;
+      color: #422800;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 0 18px;
+      line-height: 50px;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-74-secondary:hover {
+      background-color: #FFDC00/*#fff*/;
+    }
+    
+    .button-74-secondary:active {
+      box-shadow: #422800 2px 2px 0 0;
+      transform: translate(2px, 2px);
+    }
+    
+    @media (min-width: 768px) {
+      .button-74-secondary {
+        min-width: 120px;
+        padding: 0 25px;
+      }
+    }
+  
+    #screen {
+      background-color: black;
+      width: 45%;
+      min-height: 50px;
+      border-radius: 20px;
+      border: solid grey/*#66FF66*/ 7px;
+    }
+  
+    .width-75 {
+      min-height: 30px;
+    }
+  
+    #screenAndButtons {
+      height: 100%;
+    }
+    
+    #title {
+        /*
+      font-size: 90px;
+      color: silver;
+      text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+      */
+      font-size: 72px;
+      background: -webkit-linear-gradient(pink, green);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  
+    }
