@@ -8,11 +8,12 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.cdnfonts.com/css/scientific-calculator-lcd" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Lato:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malculator</title>
+    <title>Crystal-Calc</title>
 
     <link rel="icon" type="image/x-icon" href="/Art/olivine_gem.png">
   
@@ -26,20 +27,27 @@
   <body>
 
     <div class="flex column alignItemsCenter">
-      <h1 id="title" class="lobster">Malculator</h1>
+      <h1 id="title" class="lobster">Crystal-Calc</h1>
     </div>
     
     <div id="screenAndButtons" class="flex column pageContainer alignItemsCenter">
-      <div id="screen" class="flex row justifySpaceEvenly padded">
-      </div>
-      <div id="buttonGrid" class="width-75">
-      </div>
+
+        <div id="screen" class="flex row end alignItemsCenter padded">
+          <h3 id="screenDisplay"></h3>
+        </div>
+
+
+
+        <div id="buttonGrid" class="width-75 alignItemsCenter">
+        </div>
+
     </div>
 
     <h5 class="flex lobster justifyContentCenter">© Ram 2022</h5>
 
    <script src="javascript.js"></script>
   </body>
+  
 
   
 </html>
