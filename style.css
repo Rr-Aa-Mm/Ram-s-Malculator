@@ -209,22 +209,46 @@ body {
         padding: 0 25px;
       }
     }
+
+    .width-75 {
+        min-height: 30px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        border: 3px solid green;
+      }
+
+    #screenContainer {
+        background: url("./Art/1x/amethystScreen.png") no-repeat center; 
+        background-size: contain;
+        width: 40%;
+        /*margin: 100px;*/
+        padding: 50px;
+    }
   
     #screen {
       background-color: black;
-      width: 45%;
-      min-height: 65px;
+      width: 100%;
+      height: 20px;
       border-radius: 20px;
-      border: solid grey/*#66FF66*/ 7px;
-    }
-  
-    .width-75 {
-      min-height: 30px;
+      border: solid lightskyblue/*#66FF66*/ 7px;
     }
   
     #screenAndButtons {
       height: 100%;
     }
+
+
+    #screenDisplay {
+        color: white;
+        font-family: 'Scientific Calculator LCD', sans-serif;
+    }
+
+
     
     #title {
         /*
@@ -232,24 +256,13 @@ body {
       color: silver;
       text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
       */
-      font-size: 72px;
+      font-size: 35px;
       background: -webkit-linear-gradient(blue, skyblue);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
   
     }
 
-    #screenDisplay {
-        color: white;
-        font-family: 'Scientific Calculator LCD', sans-serif;
-    }
-
-    #screenContainer {
-        background: url("./Art/amethystHorizontal.png") no-repeat center; 
-        background-size: contain;
-        width: 1000px;
-        border-radius: 200px;
-    }
 
     .end {
         justify-content: flex-end;
@@ -274,6 +287,10 @@ body {
         transform: scale(1.2);
     }
 
+    .gemButtonClass:hover .hoverFadeIn {
+        opacity: 1;
+    }
+
     .gemButton {
         height: 100px;
         width: 100px;
@@ -287,6 +304,20 @@ body {
         font-family: lobster;    
     }
 
+    
+
+.hoverFadeIn {
+    opacity: 0;
+    transition: opacity .1s;
+}
+
+
+/*
+    .gemButtonFade:hover {
+        opacity: 1;
+        
+    }
+*/
     .gemButtonText {
         height: 75px;
         width: 75px;
@@ -301,3 +332,17 @@ body {
         font-size: 150%;
         z-index: 0;
     }
+
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 4px); }
+    100%   { transform: translate(0, -0px); }   
+}
