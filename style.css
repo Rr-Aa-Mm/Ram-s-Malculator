@@ -1,5 +1,9 @@
 /* FLEX DECLARATIONS */
 
+.pinkBorder {
+    border: solid hotpink;
+}
+
 body {
     background-image: url("./Art/crystalBackground.png");
     height: 100%;
@@ -126,6 +130,11 @@ body {
   .padded {
       padding: 20px;
   }
+
+  .paddedMajor {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
   
   /*
   #buttonContainer {
@@ -220,14 +229,21 @@ body {
         align-items: center;
         height: 200px;
         border: 3px solid green;
-      }
+    }
+
+    #buttonGrid {
+        width: 100%;
+    }
 
     #screenContainer {
-        background: url("./Art/1x/amethystScreen.png") no-repeat center; 
+        background: url("./Art/1x/GemsCrystalz.png") no-repeat center; 
         background-size: contain;
-        width: 40%;
+        width: 80%;
         /*margin: 100px;*/
-        padding: 50px;
+        padding-top: 17%;
+        padding-bottom: 17%;
+        padding-right: 10%;
+        padding-left: 10%;
     }
   
     #screen {
@@ -239,7 +255,8 @@ body {
     }
   
     #screenAndButtons {
-      height: 100%;
+      height: 50%;
+
     }
 
 
@@ -256,7 +273,7 @@ body {
       color: silver;
       text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
       */
-      font-size: 35px;
+      font-size: 50px;
       background: -webkit-linear-gradient(blue, skyblue);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
