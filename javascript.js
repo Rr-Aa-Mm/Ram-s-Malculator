@@ -9,7 +9,7 @@ let buttonAhoverSrc = "./Art/1x/orangeSolid80.png";
 let buttonAtransSrc = "./Art/1x/whiteTrans20.png";
 
 //other buttons
-let buttonBbaseSrc = "./Art/1x/pinkSOlid.png";
+let buttonBbaseSrc = "./Art/1x/pinkSolid.png";
 let buttonBhoverSrc = "./Art/1x/GemsAsset 9.png";
 let buttonBtransSrc = "./Art/1x/pinkTrans.png";
 
