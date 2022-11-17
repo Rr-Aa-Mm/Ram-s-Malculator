@@ -259,7 +259,7 @@ body {
         background-size: cover;
         width: 80%;
         min-width: 70%;
-        height: 10vh;
+        height: 9vh;
         /*
         padding-top: 5%;
         padding-bottom: 5%;
@@ -270,9 +270,9 @@ body {
   
     #screen {
       background-color: black;
-      width: 50%;
-      height: 60%;
-      border-radius: 20px;
+      width: 80%;
+      height: 50%;
+      border-radius: 15px;
       border: solid skyblue 5px;
     }
 
