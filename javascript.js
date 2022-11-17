@@ -1,6 +1,21 @@
 let calcEval = "";
 let justComputed = 0;
 
+//Calc Button Imagery
+
+//number buttons
+let buttonAbaseSrc = "./Art/1x/solidBlue.png";
+let buttonAhoverSrc = "./Art/1x/orangeSolid80.png";
+let buttonAtransSrc = "./Art/1x/whiteTrans20.png";
+
+//other buttons
+let buttonBbaseSrc = "./Art/1x/pinkSOlid.png";
+let buttonBhoverSrc = "./Art/1x/GemsAsset 9.png";
+let buttonBtransSrc = "./Art/1x/pinkTrans.png";
+
+screenBackgroundSrc = ".Art/1x/thingBlue.png";
+
+
 gemCalcButtonBuilder();
 function gemCalcButtonBuilder() {
     let screenDisplay = document.getElementById("screenDisplay");
@@ -27,13 +42,14 @@ function gemCalcButtonBuilder() {
         console.log("The button values are " + Object.values(thisRowValues));
         console.log(thisRowValues);
         let buttonDiv = document.createElement('div'); //create a flex row div for this line of buttons
-        buttonDiv.className = "flex row justifySpaceEvenly padded";
+        buttonDiv.className = "flex row";
+        buttonDiv.id = "buttonDiv";
         
         //For each row in the button object,loop into each button...
         for (let ii = 0; ii < thisRowValuesCount; ii++) { 
             let thisButtonValue = Object.values(thisRowValues)[ii];
             console.log(thisButtonValue);
-            let thisButton = document.createElement('div');
+            let thisButton = document.createElement('div'); 
             //thisButton.innerText = "Ram";
             thisButton.classList = "gemButtonClass";
             let thisButtonLabel = document.createElement('h1');
@@ -74,15 +90,15 @@ function gemCalcButtonBuilder() {
             //stylize each button based on datatype...
             if (typeof thisButtonValue === "number") {      
                 let thisGemUnder = document.createElement("img");
-                thisGemUnder.src = "./Art/1x/solidBlue.png";
+                thisGemUnder.src = buttonAbaseSrc;
                 thisGemUnder.classList = "gemButton";
 
                 let thisGemHover = document.createElement("img");
-                thisGemHover.src = "./Art/1x/orangeSolid80.png";
+                thisGemHover.src = buttonAhoverSrc;
                 thisGemHover.classList = "gemButton hoverFadeIn";
     
                 let thisGemOver = document.createElement("img");
-                thisGemOver.src = "./Art/1x/whiteTrans20.png";
+                thisGemOver.src = buttonAtransSrc;
                 thisGemOver.classList = "gemButton";
     
                 thisButton.appendChild(thisGemUnder);
@@ -92,7 +108,7 @@ function gemCalcButtonBuilder() {
                 
             } else {
                 let thisGemUnder = document.createElement("img");
-                thisGemUnder.src = "./Art/1x/pinkSOlid.png";
+                thisGemUnder.src = buttonBbaseSrc;
                 thisGemUnder.classList = "gemButton";
 
                 let thisGemUnder2 = document.createElement("img");
@@ -100,11 +116,11 @@ function gemCalcButtonBuilder() {
                 thisGemUnder2.classList = "gemButton";
 
                 let thisGemHover = document.createElement("img");
-                thisGemHover.src = "./Art/1x/GemsAsset 9.png";
+                thisGemHover.src = buttonBhoverSrc;
                 thisGemHover.classList = "gemButton hoverFadeIn";
     
                 let thisGemOver = document.createElement("img");
-                thisGemOver.src = "./Art/1x/pinkTrans.png";
+                thisGemOver.src = buttonBtransSrc;
                 thisGemOver.classList = "gemButton";
     
                 thisButton.appendChild(thisGemUnder);
