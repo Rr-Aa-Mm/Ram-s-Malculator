@@ -68,7 +68,7 @@ function gemCalcButtonBuilder() {
                 thisButton.addEventListener('click', () => { //Behavior when button is clicked...
                     //alert("clicked " + thisButtonValue);
                     //screenDisplay.innerText = ""; //clear the screen if this is the AC button...
-                    let calcResult = eval(calcEval);
+                    let calcResult = 7//eval(calcEval); NEUTRALIZING THE DANGEROUS EVAL() FUNCTION
                     screenDisplay.innerText = calcResult;
                     calcEval = "", //empty the formula string
                     justComputed = 1; //toggle this switch for clear the sreen on next button push
