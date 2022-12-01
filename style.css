@@ -256,7 +256,7 @@ body {
 
     #screenContainer {
         /*background: url("./Art/gemmyBG.svg") no-repeat center;*/
-        background-size: 80% 80%;
+        background-size: 100% 100%;
         width: 80%;
         min-width: 70%;
         height: 9vh;
